@@ -1,37 +1,42 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 <head>
-<script src="/cdn-cgi/apps/head/fEcwUNVE60K9CRQVjKO21awcq8w.js"></script><script class="yes" async src="https://arc.io/widget.min.js#Ayh5XoKq"></script>
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Unity WebGL Player | Death Run 3D</title>
-<link rel="shortcut icon" href="TemplateData/favicon.ico">
-<link rel="stylesheet" href="TemplateData/style.css">
-<script src="TemplateData/UnityProgress.js"></script>
-<script src="Build/UnityLoader.js"></script>
-<!-- -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="js/webglads.js" type="text/javascript"></script>
-<!-- -->
-<script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/death_run_wasm_v1.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+    <meta charset="UTF-8">
+    <title>about:blank</title>
+    <link rel="shortcut icon" > 
+    <meta name="robots" content="noindex,nofollow" />
+    <style>
+        body {
+            background-color: white;
+        }
+        #ifrm {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            z-index: 999999;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(event) {
+                if (event.key === '~') {
+                    var iframe = document.getElementById('ifrm');
+                    iframe.style.display = 'block';
+                }
+            });
+        });
     </script>
 </head>
 <body>
-<div class="webgl-content">
-<div id="gameContainer" style="width: 900px; height: 660px; margin: auto"></div>
-<!-- -->
-<div class="overlayad">
-<div class="googleadgoeshere"></div>
-<div class="googleadgoeshereOverlay"></div>
-<div class="googleadgoeshereTimerAd"></div>
-</div>
-<!-- -->
-<div class="footer">
-<div class="webgl-logo"></div>
-<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-<div class="title">Death Run 3D</div>
-</div>
-</div>
+    <iframe id='ifrm' src="https://rawcdn.githack.com/NarwhalKid/NarwhalKid.github.io/2cee29415201ffb7376c2897097ad6ed1ff70d87/slope/index.html" width="1920" height="1080"></iframe>
 </body>
 </html>
